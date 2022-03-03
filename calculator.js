@@ -19,7 +19,7 @@ app.get('/bmicalculator', (req, res) => {
 app.post('/bmicalculator', (req, res) => {
   const weight = Number(req.body.weight)
   const height = Number(req.body.height)
-  const result = weight / (height * heightit)
+  const result = weight / (height * height)
   res.send('The result of your BMI is ' + result)
 })
 
